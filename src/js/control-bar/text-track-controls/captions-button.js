@@ -26,7 +26,7 @@ class CaptionsButton extends TextTrackButton {
    */
   constructor(player, options, ready) {
     super(player, options, ready);
-    this.el_.setAttribute('aria-label', 'Captions Menu');
+    this.el_.setAttribute('aria-label', this.localize('Captions Menu'));
   }
 
   /**

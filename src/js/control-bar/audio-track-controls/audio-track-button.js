@@ -26,7 +26,7 @@ class AudioTrackButton extends TrackButton {
 
     super(player, options);
 
-    this.el_.setAttribute('aria-label', 'Audio Menu');
+    this.el_.setAttribute('aria-label', this.localize('Audio Menu'));
   }
 
   /**
