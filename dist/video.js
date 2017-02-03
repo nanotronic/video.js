@@ -26644,7 +26644,7 @@ function _createXHR(options) {
     // will load the data & process the response in a special response object
     function loadFunc() {
         if (aborted) return
-        var fileUrl = (winLoc.protocol === 'file:')
+        var fileUrl = (window.location.protocol === 'file:')
         var status
         clearTimeout(timeoutTimer)
         if((options.useXDR && xhr.status===undefined) || (fileUrl && xhr.status === 0)) {
